@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="login_userName">Username:</string>
+    <string name="login_userName_hint">Enter username</string>
+    <string name="login_pass">Password:</string>
+    <string name="login_pass_hint">Enter password</string>
+    <string name="login_btn">Login</string>
+    <string name="welcome_user">Welcome, AboAl3abed!</string>
+    <string name="customer_cartBtn">Cart</string>
+    <string name="customer_logoutBtn">Logout</string>
+</resources>
