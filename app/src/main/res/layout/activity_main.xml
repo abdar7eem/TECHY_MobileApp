@@ -5,95 +5,154 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/login_background">
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/loginLogo"
         android:layout_width="152dp"
         android:layout_height="0dp"
         android:layout_marginTop="45dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="29dp"
         android:src="@drawable/ic_launcher_foreground"
-        app:layout_constraintBottom_toTopOf="@+id/loginTable"
+        app:layout_constraintBottom_toTopOf="@+id/APPNAME"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
         android:id="@+id/loginTable"
-        android:layout_width="324dp"
-        android:layout_height="116dp"
+        android:layout_width="347dp"
+        android:layout_height="154dp"
         android:layout_marginStart="43dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="43dp"
-        android:layout_marginBottom="123dp"
+        android:layout_marginBottom="7dp"
         android:stretchColumns="1"
-        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintBottom_toTopOf="@+id/signupBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginLogo">
+        app:layout_constraintTop_toBottomOf="@+id/APPNAME">
 
-        <TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingTop="15dp">
 
             <TextView
+                style="@style/TextViewBody"
                 android:padding="8dp"
                 android:text="@string/login_userName"
-                style="@style/TextViewBody"
                 android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/etUsername"
+                style="@style/LoginEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/LoginEditText"
                 android:hint="@string/login_userName_hint"
                 android:inputType="textPersonName" />
         </TableRow>
 
-        <TableRow android:layout_marginTop="30px">
+        <TableRow android:layout_marginTop="30px"
+            android:layout_height="80dp"
+            android:paddingTop="10dp">
 
             <TextView
+                style="@style/TextViewBody"
                 android:padding="8dp"
                 android:text="@string/login_pass"
-                style="@style/TextViewBody"
                 android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/etPassword"
+                style="@style/LoginEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/LoginEditText"
                 android:hint="@string/login_pass_hint"
                 android:inputType="textPassword" />
         </TableRow>
     </TableLayout>
-,.
+
+
     <Button
         android:id="@+id/btnLogin"
+        style="@style/Btn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="118dp"
+        android:layout_marginTop="30dp"
         android:text="@string/login_btn"
-        style="@style/Btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/loginTable" />
+        app:layout_constraintTop_toBottomOf="@+id/signupBtn" />
 
     <TextView
         android:id="@+id/APPNAME"
+        style="@style/LoginAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
         android:text="APP NAME"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/loginTable"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginLogo"
-        style="@style/LoginAppName"/>
+        app:layout_constraintTop_toBottomOf="@+id/loginLogo" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextViewBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/don_t_have_account"
+        app:layout_constraintEnd_toStartOf="@+id/signupBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signupBtn" />
+
+    <Button
+        android:id="@+id/signupBtn"
+        style="@style/Btn"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/sign_up"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/loginTable" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/TextViewBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="@string/remember_me"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        style="@style/CheckBox"
+        android:layout_width="43dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/signupBtn"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

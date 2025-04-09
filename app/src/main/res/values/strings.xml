@@ -8,4 +8,7 @@
     <string name="welcome_user">Welcome, AboAl3abed!</string>
     <string name="customer_cartBtn">Cart</string>
     <string name="customer_logoutBtn">Logout</string>
+    <string name="remember_me">Remember me</string>
+    <string name="don_t_have_account">Don\'t have account?</string>
+    <string name="sign_up">Sign up</string>
 </resources>
