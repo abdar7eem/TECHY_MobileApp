@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="12dp" android:background="#EEEEEE" android:layout_marginBottom="8dp">
+
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="12dp"
+        android:src="@mipmap/ic_home"
+        android:scaleType="centerCrop" />
+
+    <!-- Product Details (Name & Price) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textSize="16sp"
+            android:textColor="#008800"/>
+
+        <TextView
+            android:id="@+id/tvProductType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Type"
+            android:textSize="16sp"
+            android:textColor="#838181"/>
+    </LinearLayout>
+</LinearLayout>
