@@ -66,7 +66,7 @@ public class signup extends AppCompatActivity {
                 return;
             }
 
-            users.add(new User(username, password));
+            users.add(new User(username, password, email));
             saveUsersToPrefs();
 
             Toast.makeText(this, "Account created successfully!", Toast.LENGTH_SHORT).show();
