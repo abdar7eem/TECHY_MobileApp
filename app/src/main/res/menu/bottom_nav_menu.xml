@@ -8,8 +8,5 @@
         android:id="@+id/nav_cart"
         android:icon="@drawable/cart"
         android:title="Cart" />
-    <item
-        android:id="@+id/nav_history"
-        android:icon="@drawable/history"
-        android:title="History" />
+
 </menu>

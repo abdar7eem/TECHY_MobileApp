@@ -10,15 +10,13 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.example.assignment1.Product;
-
 import java.util.List;
 
-public class ProductAdapter extends ArrayAdapter<Product> {
+public class CartAdapter extends ArrayAdapter<Product> {
     private Context context;
     private List<Product> products;
 
-    public ProductAdapter(@NonNull Context context, List<Product> products) {
+    public CartAdapter(@NonNull Context context, List<Product> products) {
         super(context, 0, products);
         this.context = context;
         this.products = products;
@@ -30,17 +28,19 @@ public class ProductAdapter extends ArrayAdapter<Product> {
         Product product = products.get(position);
 
         if (convertView == null) {
-            convertView = LayoutInflater.from(context).inflate(R.layout.activity_product_item, parent, false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.activity_product_item_cart, parent, false);
         }
 
         TextView name = convertView.findViewById(R.id.tvProductName);
         TextView price = convertView.findViewById(R.id.tvProductPrice);
         TextView type = convertView.findViewById(R.id.tvProductType);
         ImageView image = convertView.findViewById(R.id.productImage);
+        TextView quantity = convertView.findViewById(R.id.tvProductQuantity);
 
         name.setText(product.getName());
         price.setText("Price: $" + product.getPrice());
         type.setText("Type: " + product.getType());
+        quantity.setText("Quantity: " + product.getQuantity());
 
         int imageResId = context.getResources().getIdentifier(product.getImgName(), "drawable", context.getPackageName());
         if (imageResId != 0) {
