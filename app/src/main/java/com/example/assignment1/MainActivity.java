@@ -85,7 +85,9 @@ public class MainActivity extends AppCompatActivity {
             if (chkbox.isChecked()) {
                 saveUserData();
             }
-//            startActivity(new Intent(MainActivity.this, AdminHomeActivity.class));
+            Intent intent= new Intent(MainActivity.this, admin_homepage.class);
+            intent.putExtra("userName", "admin");
+            startActivity(intent);
             finish();
         } else if (isUserValid(etUserName.getText().toString(), etPassword.getText().toString())) {
             if (chkbox.isChecked()) {
