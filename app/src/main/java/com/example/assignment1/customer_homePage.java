@@ -2,12 +2,14 @@ package com.example.assignment1;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Spinner;
@@ -71,6 +73,11 @@ public class customer_homePage extends AppCompatActivity {
         tvUserWelcome.setText("Welcome, " + currentUser);
         searchView.setIconifiedByDefault(false);
         searchView.setFocusableInTouchMode(true);
+
+        int id_search = searchView.getContext().getResources().getIdentifier("android:id/search_src_text", null, null);
+        TextView textView = (TextView) searchView.findViewById(id_search);
+        textView.setTextColor(Color.WHITE);
+        textView.setHintTextColor(Color.WHITE);
 
         loadItemDynamic();
 
@@ -144,18 +151,18 @@ public class customer_homePage extends AppCompatActivity {
         List<Product> productList = new ArrayList<>();
 
 // Monitors
-        productList.add(new Product("Samsung Curved Monitor 27\"", 20, 249.99, "Monitor", "monitor1"));
-        productList.add(new Product("ASUS ProArt Display", 18, 349.99, "Monitor", "monitor2"));
-        productList.add(new Product("Dell Ultrasharp U2723QE", 15, 429.99, "Monitor", "monitor3"));
-        productList.add(new Product("Acer Nitro XV272U", 25, 289.99, "Monitor", "monitor4"));
-        productList.add(new Product("BenQ PD2700U", 12, 379.99, "Monitor", "monitor5"));
+        productList.add(new Product("Samsung Curved Monitor 27", 20, 249.99, "Monitor", "samsung_monitor"));
+        productList.add(new Product("ASUS ProArt Display", 18, 349.99, "Monitor", "asus_monitor"));
+        productList.add(new Product("Dell Ultrasharp U2723QE", 15, 429.99, "Monitor", "dell_monitor"));
+        productList.add(new Product("Acer Nitro XV272U", 25, 289.99, "Monitor", "acer_monitor"));
+        productList.add(new Product("BenQ PD2700U", 12, 379.99, "Monitor", "benq_monitor"));
 
 // Keyboards
-        productList.add(new Product("Corsair K70 RGB", 30, 129.99, "Keyboard", "keyboard1"));
-        productList.add(new Product("SteelSeries Apex Pro", 20, 199.99, "Keyboard", "keyboard2"));
-        productList.add(new Product("Logitech MX Keys", 25, 99.99, "Keyboard", "keyboard3"));
-        productList.add(new Product("Razer Cynosa V2", 35, 59.99, "Keyboard", "keyboard4"));
-        productList.add(new Product("HyperX Alloy Origins", 28, 89.99, "Keyboard", "keyboard5"));
+        productList.add(new Product("Corsair K70 RGB", 30, 129.99, "Keyboard", "corsair_keyboard"));
+        productList.add(new Product("SteelSeries Apex Pro", 20, 199.99, "Keyboard", "steelseries_keyboard"));
+        productList.add(new Product("Logitech MX Keys", 25, 99.99, "Keyboard", "logitech_keyboard"));
+        productList.add(new Product("Razer Cynosa V2", 35, 59.99, "Keyboard", "rayzer_keyboard"));
+        productList.add(new Product("HyperX Alloy Origins", 28, 89.99, "Keyboard", "hyperx_keyboard"));
 
 // Mouses
         productList.add(new Product("Razer DeathAdder V2", 40, 69.99, "Mouse", "mouse1"));

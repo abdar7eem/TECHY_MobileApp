@@ -3,10 +3,10 @@
     <style name="LoginAppName">
         <item name="android:textSize">22sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#B60A0A</item>
+        <item name="android:textColor">#FF8703</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">8dp</item>
-        <item name="android:fontFamily">cursive</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
     </style>
 
     <style name="TextViewHeader">
@@ -21,8 +21,8 @@
 
     <style name="Btn">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">#CCCCCC</item>
-        <item name="android:backgroundTint">#B60A0A</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:backgroundTint">#FF8703</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -33,7 +33,21 @@
     </style>
 
     <style name="CheckBox">
-        <item name="android:buttonTint">#B60A0A</item>
+        <item name="android:buttonTint">#FF8703</item>
+    </style>
+
+
+    <style name="WhiteSpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">#5B5B5B</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:popupBackground">#FFFFFF</item>
+        <item name="android:textColorHint">#FFFFFF</item>
+    </style>
+
+    <style name="WhiteSeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:thumbTint">@android:color/white</item>
+        <item name="android:progressTint">@android:color/white</item>
+        <item name="android:progressBackgroundTint">@android:color/white</item>
     </style>
 
 

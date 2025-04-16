@@ -6,6 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_background"
     tools:context=".customer_cart">
 
     <!-- ListView to show cart items -->
@@ -25,7 +26,6 @@
         android:layout_width="42dp"
         android:layout_height="28dp"
         android:text="Cart"
-        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/cartListView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,7 @@
         android:text="Total: $0.00"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         app:layout_constraintTop_toBottomOf="@id/cartListView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,6 +90,7 @@
 
     <TextView
         android:id="@+id/tvMyBalance"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
