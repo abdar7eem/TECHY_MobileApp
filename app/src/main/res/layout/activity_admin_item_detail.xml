@@ -7,8 +7,6 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Product Image -->
-
     <TextView
         android:id="@+id/tvproductQuantity"
         android:layout_width="wrap_content"
@@ -46,7 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Product Name -->
     <TextView
         android:id="@+id/productNameText"
         android:layout_width="wrap_content"
@@ -60,7 +57,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/productImageView" />
 
-    <!-- Product Type -->
     <TextView
         android:id="@+id/productTypeText"
         android:layout_width="wrap_content"
@@ -73,7 +69,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/productNameText" />
 
-    <!-- Product Price -->
     <TextView
         android:id="@+id/productPriceText"
         android:layout_width="wrap_content"
@@ -118,7 +113,7 @@
         android:layout_height="41dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="44dp"
-        android:backgroundTint="#B60A0A"
+        android:backgroundTint="#FF8703"
         android:text="Add Quantity"
         android:textColor="@android:color/white"
         android:textStyle="bold"
@@ -147,15 +142,12 @@
         android:layout_height="41dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="52dp"
-        android:backgroundTint="#B60A0A"
+        android:backgroundTint="#FF8703"
         android:text="Edit"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-
-    <!-- Editable New Price Input -->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

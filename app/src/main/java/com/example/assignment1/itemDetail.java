@@ -91,7 +91,6 @@ public class itemDetail extends AppCompatActivity {
         buyBtn.setOnClickListener(event -> {
             int selectedQuantity = picker.getValue();
 
-            // Build product to add to cart
             Product cartProduct = new Product(
                     productName,
                     selectedQuantity,

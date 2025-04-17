@@ -42,17 +42,14 @@ public class admin_item_detail extends AppCompatActivity {
         sharedPreferences = getSharedPreferences("MyApp", MODE_PRIVATE);
         editor = sharedPreferences.edit();
 
-        // Load product data from intent
         String imgName = getIntent().getStringExtra("imageName");
         selectedProductName = getIntent().getStringExtra("name");
         int quantity = getIntent().getIntExtra("quantity", 0);
         String type = getIntent().getStringExtra("type");
         double price = getIntent().getDoubleExtra("price", 0);
 
-        // Load product list from SharedPreferences
         loadProducts();
 
-        // Find selected product object
         for (Product p : productList) {
             if (p.getName().equals(selectedProductName)) {
                 selectedProduct = p;
@@ -66,7 +63,6 @@ public class admin_item_detail extends AppCompatActivity {
             return;
         }
 
-        // Display product data
         productNameText.setText(selectedProduct.getName());
         productTypeText.setText("Type: " + selectedProduct.getType());
         productPriceText.setText("Price: $" + selectedProduct.getPrice());
@@ -74,11 +70,9 @@ public class admin_item_detail extends AppCompatActivity {
         int imageResId = getResources().getIdentifier(imgName, "drawable", getPackageName());
         productImageView.setImageResource(imageResId);
 
-        // Setup NumberPicker
         quantityPicker.setMinValue(1);
         quantityPicker.setMaxValue(100);
 
-        // Add Quantity Logic
         quantityBtn.setOnClickListener(v -> {
             int addedQty = quantityPicker.getValue();
             selectedProduct.setQuantity(selectedProduct.getQuantity() + addedQty);
@@ -87,7 +81,6 @@ public class admin_item_detail extends AppCompatActivity {
             Toast.makeText(this, "Quantity updated!", Toast.LENGTH_SHORT).show();
         });
 
-        // Edit Price Logic
         priceBtn.setOnClickListener(v -> {
             String newPriceStr = editProductPrice.getText().toString().trim();
             if (newPriceStr.isEmpty()) {

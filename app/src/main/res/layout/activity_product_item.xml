@@ -3,12 +3,11 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="8dp"
     android:background="#EEEEEE"
+    android:backgroundTint="@color/white"
     android:orientation="horizontal"
-    android:padding="12dp"
-    android:backgroundTint="@color/white">
+    android:padding="12dp">
 
 
-    <!-- Product Image -->
     <ImageView
         android:id="@+id/productImage"
         android:layout_width="80dp"
@@ -17,7 +16,6 @@
         android:scaleType="centerCrop"
         android:src="@mipmap/ic_home" />
 
-    <!-- Product Details (Name & Price) -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"

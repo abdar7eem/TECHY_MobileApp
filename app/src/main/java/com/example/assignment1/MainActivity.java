@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
         loginBtn.setOnClickListener(v -> handleLogin());
 
-        signupBtn.setOnClickListener(view->{
-            Intent intent=new Intent(MainActivity.this, signup.class);
+        signupBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, signup.class);
             startActivity(intent);
         });
     }
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
             if (chkbox.isChecked()) {
                 saveUserData();
             }
-            Intent intent= new Intent(MainActivity.this, admin_homepage.class);
+            Intent intent = new Intent(MainActivity.this, admin_homepage.class);
             intent.putExtra("userName", "admin");
             startActivity(intent);
             finish();
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
             if (chkbox.isChecked()) {
                 saveUserData();
             }
-            Intent intent=new Intent(MainActivity.this, customer_homePage.class);
+            Intent intent = new Intent(MainActivity.this, customer_homePage.class);
             intent.putExtra("userName", currentUser.getUsername());
             startActivity(intent);
             finish();
@@ -103,12 +103,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    private void saveUserData() {
+        editor.putString("userName", etUserName.getText().toString());
+        editor.putString("password", etPassword.getText().toString());
+        editor.commit();
+    }
 
-private void saveUserData() {
-    editor.putString("userName", etUserName.getText().toString());
-    editor.putString("password", etPassword.getText().toString());
-    editor.commit();
-}
     private boolean isUserValid(String username, String password) {
         String usersJson = sharedPreferences.getString("users", null);
         if (usersJson == null) return false;
@@ -118,7 +118,7 @@ private void saveUserData() {
 
         for (User user : usersArray) {
             if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
-                currentUser=user;
+                currentUser = user;
                 return true;
             }
         }

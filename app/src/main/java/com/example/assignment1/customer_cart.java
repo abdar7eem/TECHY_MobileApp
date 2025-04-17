@@ -84,10 +84,8 @@ public class customer_cart extends AppCompatActivity {
                             Toast.makeText(this, "Insufficient balance! Please add funds.", Toast.LENGTH_LONG).show();
                             return;
                         } else {
-                            // Deduct amount
                             user.setAmount(balance - totalPrice);
 
-                            // Update product quantities
                             String productsJson = sharedPreferences.getString("products", "");
                             if (!productsJson.isEmpty()) {
                                 Product[] originalArray = gson.fromJson(productsJson, Product[].class);
@@ -106,20 +104,17 @@ public class customer_cart extends AppCompatActivity {
                                 editor.putString("products", updatedProductsJson);
                             }
 
-                            // Save updated user list
                             String updatedUsersJson = gson.toJson(userList);
                             editor.putString("users", updatedUsersJson);
 
-                            // Clear cart
                             String cartKey = "cart_" + currentUser;
                             editor.remove(cartKey);
                             editor.apply();
 
-                            // Clear and refresh UI
                             cartList.clear();
                             adapter.notifyDataSetChanged();
                             tvTotalPrice.setText("Total: $0.00");
-                            setCurrentBalance(currentUser); // 🔁 refresh displayed balance
+                            setCurrentBalance(currentUser);
 
                             Toast.makeText(this, "Purchase confirmed!", Toast.LENGTH_SHORT).show();
                         }

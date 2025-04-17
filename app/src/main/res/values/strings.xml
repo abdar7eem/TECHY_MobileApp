@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Assignment1</string>
+    <string name="app_name">Techy</string>
     <string name="login_userName">Username:</string>
     <string name="login_userName_hint">Enter username</string>
     <string name="login_pass">Password:</string>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="LoginAppName">
-        <item name="android:textSize">22sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#FF8703</item>
+        <item name="android:textColor">#FFFF</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">8dp</item>
-        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:fontFamily">serif</item>
     </style>
 
     <style name="TextViewHeader">
