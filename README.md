@@ -40,7 +40,6 @@ Here are some screenshots of the TECHY app:
 - [👤 Profile Page](screenshots/profile.png)
 - [🛠 Admin Edit Product](screenshots/admin_edit.png)
 
-Make sure to place your images in a `/screenshots/` folder in the root directory of your project.
 
 ---
 
