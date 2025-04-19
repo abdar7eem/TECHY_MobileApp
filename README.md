@@ -33,13 +33,23 @@ TECHY is a modern Android e-commerce application for selling and browsing tech g
 
 Here are some screenshots of the TECHY app:
 
-- [🚦 Login Page]
-- ![](screenshots/login.png)
-- [🏠 Home Page](screenshots/home.png)
-- [🛒 Cart Page]([screenshots/cart.png](https://github.com/abdar7eem/TECHY_MobileApp/blob/b999655fff333052d44a11e754fe2affde96007f/screenshots/cart.png))
-- [🔎 Search & Filter](screenshots/search_filter.png)
-- [👤 Profile Page](screenshots/profile.png)
-- [🛠 Admin Edit Product](screenshots/admin_edit.png)
+- 🚦 Login Page  
+  <img src="screenshots/login.png" alt="Login Page" width="400"/>
+
+- 🏠 Home Page  
+  <img src="screenshots/home.png" alt="Home Page" width="400"/>
+
+- 🛒 Cart Page  
+  <img src="screenshots/cart.png" alt="Cart Page" width="400"/>
+
+- 🔎 Search & Filter  
+  <img src="screenshots/search_filter.png" alt="Search and Filter" width="400"/>
+
+- 👤 Profile Page  
+  <img src="screenshots/profile.png" alt="Profile Page" width="400"/>
+
+- 🛠 Admin Edit Product  
+  <img src="screenshots/admin_edit.png" alt="Admin Edit Product" width="400"/>
 
 
 ---
