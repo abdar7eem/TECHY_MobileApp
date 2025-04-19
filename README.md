@@ -35,7 +35,7 @@ Here are some screenshots of the TECHY app:
 
 - [🚦 Login Page](screenshots/home .png)
 - [🏠 Home Page](screenshots/home.png)
-- [🛒 Cart Page](screenshots/cart.png)
+- [🛒 Cart Page]([screenshots/cart.png](https://github.com/abdar7eem/TECHY_MobileApp/blob/b999655fff333052d44a11e754fe2affde96007f/screenshots/cart.png))
 - [🔎 Search & Filter](screenshots/search_filter.png)
 - [👤 Profile Page](screenshots/profile.png)
 - [🛠 Admin Edit Product](screenshots/admin_edit.png)
