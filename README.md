@@ -56,7 +56,7 @@ Here are some screenshots of the TECHY app:
 
 ## 🎥 Demo Video
 
-📽️ Watch the app in action here: **[Demo Video](#)**  
+📽️ Watch the app in action here: **[Demo Video](https://drive.google.com/file/d/1BXJOtPN3xNEwB-xKMGYFwYStUbQtUs_f/view?usp=sharing)**  
 
 ---
 
